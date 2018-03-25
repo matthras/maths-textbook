@@ -34,65 +34,28 @@
 %
 %    Remove any commented or uncommented macros you do not use.
 
-\documentclass{amsbook}
+\documentclass[11pt, atpaper]{article}
 
   %    For use when working on individual chapters
   %\includeonly{}
   
   %    Include referenced packages here.
-  \usepackage{}
-  
-  \newtheorem{theorem}{Theorem}[chapter]
-  \newtheorem{lemma}[theorem]{Lemma}
-  
-  \theoremstyle{definition}
-  \newtheorem{definition}[theorem]{Definition}
-  \newtheorem{example}[theorem]{Example}
-  \newtheorem{xca}[theorem]{Exercise}
-  
-  \theoremstyle{remark}
-  \newtheorem{remark}[theorem]{Remark}
-  
-  \numberwithin{section}{chapter}
-  \numberwithin{equation}{chapter}
   
   %    For a single index; for multiple indexes, see the manual
   %    "Instructions for preparation of papers and monographs:
   %    AMS-LaTeX" (instr-l.pdf in the AMS-LaTeX distribution).
-  \makeindex
+  %\makeindex
   
   \begin{document}
   
-  \frontmatter
+  %\frontmatter
   
-  \title{}
+  \title{Matt's Maths Textbook}
+
+  \section{Hello!}
+
   
-  %    Remove any unused author tags.
-  
-  %    author one information
-  \author{}
-  \address{}
-  \curraddr{}
-  \email{}
-  \thanks{}
-  
-  %    author two information
-  \author{}
-  \address{}
-  \curraddr{}
-  \email{}
-  \thanks{}
-  
-  \subjclass[2010]{Primary }
-  
-  \keywords{}
-  
-  \date{}
-  
-  \begin{abstract}
-  \end{abstract}
-  
-  \maketitle
+  %\maketitle
   
   %    Dedication.  If the dedication is longer than a line or two,
   %    remove the centering instructions and the line break.
@@ -105,28 +68,28 @@
   %\cleardoublepage
   
   %    Change page number to 6 if a dedication is present.
-  \setcounter{page}{4}
+  %\setcounter{page}{4}
   
-  \tableofcontents
+  %\tableofcontents
   
   %    Include unnumbered chapters (preface, acknowledgments, etc.) here.
-  \include{}
+  %\include{}
   
-  \mainmatter
+  %\mainmatter
   %    Include main chapters here.
-  \include{}
-  \include{sequences/sequences.tex}
+  %\include{}
+  \input{sequences/sequences.tex}
   
-  \appendix
+  %\appendix
   %    Include appendix "chapters" here.
-  \include{}
+  %\include{}
   
-  \backmatter
+  %\backmatter
   %    Bibliography styles amsplain or harvard are also acceptable.
-  \bibliographystyle{amsalpha}
-  \bibliography{}
+  %\bibliographystyle{amsalpha}
+  %\bibliography{}
   %    See note above about multiple indexes.
-  \printindex
+  %\printindex
   
   \end{document}
   
