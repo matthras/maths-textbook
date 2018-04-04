@@ -17,3 +17,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % MACROS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% BoxedExample - Boxes throughout the text denoted 'Example' that are intended to demonstrate a particular mathematical example.
+\newcommand{\boxedExample}[1]{
+  \begin{tcolorbox}[enhanced,
+    attach boxed title to top left,
+    colback=blue!5!white,
+    colframe=blue!75!black,
+    colbacktitle=red!80!black,
+    title=Example,
+    fonttitle=\bfseries,
+    boxed title style={size=small,colframe=red!50!black}
+    ]
+  {#1}
+  \end{tcolorbox}
+}
